@@ -9,3 +9,13 @@ export function getMovieByName(name) {
         })
     }
 }
+
+export function getMovieDetails(id) {
+    return async function(dispatch) {
+        let json = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=342e8b9a`)
+        return dispatch({
+            type: 'GET_MOVIE_DETAILS',
+            payload: json.data
+        })
+    }
+}
