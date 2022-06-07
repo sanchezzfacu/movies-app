@@ -1,0 +1,25 @@
+
+.footer-container {
+    background-color: rgb(224, 23, 23);
+    height: 80px;
+    width: 100%;
+    margin-top: 80px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and(min-width:600px) and (max-width: 2000px) {
+        h1 {
+            font-size: 30px;
+        }
+        img {
+            height: 40px;
+            margin: 0px 20px;
+            margin-top: 5px;
+        }
+    }
+    
+    @media screen and(min-width:300px) and (max-width: 599px) {
+        
+    }    
+}

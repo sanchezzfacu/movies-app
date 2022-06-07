@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Searchbar from './Searchbar'
 import Card from './Card'
+import Footer from './Footer'
 import { getMovies } from '../redux/actions'
 import '../css/home.css'
 
@@ -24,6 +25,7 @@ function Home() {
                         
                 })}
             </div>
+            <Footer/>
         </div>
     )
 }

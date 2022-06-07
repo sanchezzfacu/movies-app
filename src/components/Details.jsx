@@ -18,8 +18,10 @@ function Details() {
                 <h1>{details.Title}</h1>
                 <h3>{details.Plot}</h3>
                 <h3>Actors: {details.Actors}</h3>
-                <h3>Rating: {details.imdbRating}</h3>
-                <h3>Runtime: {details.Runtime}</h3>
+                <div className='chop-details'>
+                    <h3>Rating: {details.imdbRating}</h3>
+                    <h3>Runtime: {details.Runtime}</h3>
+                </div>
             </div>
             <div className='img-details-container'>
                 <img src={details.Poster} alt="" />

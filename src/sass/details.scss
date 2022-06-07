@@ -8,7 +8,7 @@
         
     }
     
-    @media screen and (min-width: 1100px) and (max-width: 1600px) {
+    @media screen and (min-width: 930px) and (max-width: 1600px) {
         .movie-information {
             color: #fff;
             width: 50%;
@@ -21,6 +21,10 @@
                 margin: 40px 0px;
                 margin-left: 30px;
             }
+            .chop-details {
+                display: flex;
+                justify-content: center;
+            }
         }
         .img-details-container {
             margin-right: 100px;
@@ -31,7 +35,24 @@
         }
     }
     
-    @media screen and (min-width: 300px) and (max-width: 1099px) {
-    
+    @media screen and (min-width: 300px) and (max-width: 929px) {
+        flex-direction: column;
+        justify-content: center;
+        .movie-information {
+            color: #fff;
+            h1 {
+                font-size: 2em;
+                margin: 50px auto;
+                display: flex;
+                justify-content: center;
+            }
+            h3 {
+                margin: 20px;
+            }
+            .chop-details {
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 }

@@ -1,0 +1,18 @@
+.footer-container {
+  background-color: #e01717;
+  height: 80px;
+  width: 100%;
+  margin-top: 80px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (min-width: 600px) and (max-width: 2000px) {
+    .footer-container h1 {
+      font-size: 30px; }
+    .footer-container img {
+      height: 40px;
+      margin: 0px 20px;
+      margin-top: 5px; } }
+
+/*# sourceMappingURL=footer.css.map */
