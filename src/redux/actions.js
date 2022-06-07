@@ -19,3 +19,13 @@ export function getMovieDetails(id) {
         })
     }
 }
+
+export function getMovies() {
+    return async function(dispatch) {
+        let json = await axios.get(`http://www.omdbapi.com/?s=bad&apikey=342e8b9a`)
+        return dispatch ({
+            type: 'GET_MOVIES',
+            payload: json.data.Search
+        })
+    }
+}

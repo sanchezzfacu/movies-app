@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { getMovieByName } from '../redux/actions'
+import '../css/searchbar.css'
 
 function Searchbar() {
     const dispatch = useDispatch()
@@ -16,9 +17,14 @@ function Searchbar() {
     }
 
     return (
-        <div>
+        <div className='searchbar-container'>
             <input onChange={handleInputChange} type="text" />
-            <button onClick={handleSubmit} type='submit'>Search</button>
+            <button 
+                className='btn-search'
+                onClick={handleSubmit} 
+                type='submit'>
+                Search
+            </button>
         </div>
     )
 }

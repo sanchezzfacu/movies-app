@@ -1,0 +1,65 @@
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .searchbar-container button {
+    background-color: red;
+    color: #fff;
+    letter-spacing: 2px;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #000; }
+  .searchbar-container input {
+    border: 1px solid #000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding-left: 10px; }
+  @media screen and (min-width: 1100px) and (max-width: 1699px) {
+    .searchbar-container {
+      margin-bottom: 50px;
+      margin-top: 50px; }
+      .searchbar-container input {
+        width: 400px;
+        height: 40px;
+        font-size: 20px; }
+      .searchbar-container button {
+        width: 80px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 17px; }
+        .searchbar-container button img {
+          height: 30px;
+          margin-bottom: 0px;
+          padding-bottom: 0px; } }
+  @media screen and (min-width: 640px) and (max-width: 1099px) {
+    .searchbar-container {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      .searchbar-container input {
+        width: 40%;
+        height: 35px;
+        font-size: 16px; }
+      .searchbar-container button {
+        height: 35px;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 0px 5px; } }
+  @media screen and (min-width: 300px) and (max-width: 639px) {
+    .searchbar-container {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      .searchbar-container input {
+        width: 60%;
+        height: 35px;
+        font-size: 16px; }
+      .searchbar-container button {
+        height: 35px;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 0px 5px; } }
+
+/*# sourceMappingURL=searchbar.css.map */

@@ -5,6 +5,11 @@ const initialState = {
 
 export default function rootReducer(state = initialState, action) {
     switch(action.type) {
+        case 'GET_MOVIES' : 
+            return {
+                ...state,
+                movie: action.payload
+            }
         case 'GET_MOVIE_BY_NAME' :
             return {
                 ...state, 

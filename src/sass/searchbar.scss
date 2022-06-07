@@ -1,0 +1,79 @@
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        background-color: red;
+        color: #fff;
+        letter-spacing: 2px;
+        border: none;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px solid #000;
+    }
+    input {
+        border: 1px solid #000;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        padding-left: 10px;
+    }
+    @media screen and (min-width: 1700px) and (max-width: 2000px) {
+        
+    }
+    
+    @media screen and (min-width: 1100px) and (max-width: 1699px) {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        input {
+            width: 400px;
+            height: 40px;
+            font-size: 20px;
+        }
+        button {
+            width: 80px;
+            height: 40px;
+            font-weight: 600;
+            font-size: 17px;
+
+            img {
+                height: 30px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 640px) and (max-width: 1099px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        input {
+            width: 40%;
+            height: 35px;
+            font-size: 16px;
+        }
+        button {
+            height: 35px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 0px 5px;
+        }
+    }
+    @media screen and (min-width: 300px) and (max-width: 639px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        input {
+            width: 60%;
+            height: 35px;
+            font-size: 16px;
+        }
+        button {
+            height: 35px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 0px 5px;
+        }
+    }
+}
