@@ -10,7 +10,7 @@ function Home() {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getMovies())
-    })
+    },[dispatch])
     return (
         <div className='home-container'>
             <Searchbar/>
